@@ -25,7 +25,8 @@ function ToQuestion(){
 }
 function ToСaesarСipher(){
     document.getElementById("quiz").style.display = "none";
-    document.getElementById("caesar-cipher").style.display = "flex"
+    document.getElementById("caesar-cipher").style.display = "flex";
+    document.body.style.backgroundImage = "url('13.png')";
 }
 
 const quizData = [

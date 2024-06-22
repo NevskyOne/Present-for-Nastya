@@ -4,8 +4,9 @@ body {
     display: flex;
     width: 70%;
     margin: 0 auto;
+    background-image: url("heart4.png");
     background-color: rgb(255, 229, 239);
-    
+    background-repeat: inherit;
 }
 #main{
     text-align: center;
