@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Люблю тебя, котик!</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="logic.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <section id="main">
+            <h1>Привет, котик, я сделал этот небольшой сайт специально для тебя!</h1>
+            <p>Я невероятно люблю тебя и подготовил для тебя небольшой подарок❤</p>
+            <img id = "cat-gif" src = "https://99px.ru/sstorage/86/2019/07/image_861007190943094997610.gif">
+            <div class="buttons">
+                <button onclick="ToQuest()" class="blob-btn">
+                Хочу посмотреть!
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                <br/>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+        </section>
+        <section id="quest">
+            <h1>Время опроса!</h1>
+            <p>Я задам тебе 10 вопросов про меня, если ты ответишь на все правильно, то узнаешь где подарок</p>
+            <p>(проходить опрос можно любое количество раз)</p>
+            <div class="buttons">
+                <button onclick="ToQuestion()" class="blob-btn">
+                Давай начнем!
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                <br/>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+        </section>
+        <section id="quiz">
+            <div class="quiz-header">
+                <h1 id="question">Question text</h1>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <button id="submit" onclick="Check()" class="blob-btn">
+                Ответить
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                <br/>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+        </section>
+        <div id="caesar-cipher">
+          <h1 id="cipher">Ьырмэыч ьыр ъыучыц юяышм</h1>
+          <img src="https://media0.giphy.com/media/C9X0zHJVlmRe49zAtv/giphy.gif?cid=6c09b9526ekgju7463j81sv6lp7vais6380bq268a2u1cleh&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+          <p id="wrong-text">яразецрфиш</p>
+        </div>
+    </body>
+</html>
